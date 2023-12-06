@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin:0px;
+    font-family: cursive;
+}
+body
+{
+    background: url('/src/components/pic/5.jpg');
+    height:100vh;
+    width:100vw;
+}
+.box {
+    width: 30vw;
+    height: 60vh;
+    border-radius: 3.5rem;
+    box-shadow: 0 1.5rem 1rem rgb(5, 5, 5);
+    background: transparent;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 35rem;
+  }
+.wave{
+    opacity:o.3;
+    position: absolute;
+    top:120%;
+    left: 50%;
+    background: white;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top:-20rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+}
+.wave.-three{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.3;
+}
+.wave.-two{
+    animation: drift 7000ms infinite linear;
+    opacity: 0.2;
+    z-index: 3!important;
+}
+.wave.-one{
+    animation: drift 10000ms infinite linear;
+    opacity: 0.1;
+    z-index: 3!important;
+}
+@keyframes drift {
+    from{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+.info{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    z-index: 4;
+}
+.location{
+    margin-top: -5.5rem;
+    color:white;
+    text-align:center;
+    font-weight: 100;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.temp{
+    color: aqua; 
+    margin-top:2.5rem;
+    text-align: center;
+    font-size:3rem;
+}
+.temp2{
+    margin-top:5.5rem;
+    text-align: center;
+    color:white;
+    font-size:2.5rem;
+}
+.tempmin_max{
+    text-align: center;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    font-size:1.2rem;
+    color: rgb(142, 106, 227);
+}
+
+
+
+.inputData{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    box-shadow: 0 19.5rem 5rem rgb(235, 180, 180);
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputFeild{
+    width: 70%;
+    margin: auto;
+    border-radius: 3rem;
+    padding:1rem 1rem;
+    outline: none;
+    font-size:1.5rem ;
+    box-shadow: 0 0.1rem 6rem rgb(229, 254, 3);
+}
