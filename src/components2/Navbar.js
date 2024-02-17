@@ -7,7 +7,7 @@ export default function Navbar(props) {
       <div>
         <nav className={`navbar navbar-expand-lg navbar-${props.mode==='white'?'light':'dark'} bg-${props.mode==='white'?'light':'dark'}`}>
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/"><h2><img src={tem} alt="pic" />WeatherRpt</h2></Link>
+    <Link className="navbar-brand" to="/"><h2><img src={tem} alt="pic" />SkyCast</h2></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
